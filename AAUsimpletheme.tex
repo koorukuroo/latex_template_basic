@@ -24,21 +24,22 @@
 % Or whatever. Note that the encoding and the font should match. If T1
 % does not look nice, try deleting the line with the fontenc.
 \usepackage{helvet}
+\usepackage{kotex}
 
 % colored hyperlinks
 \newcommand{\chref}[2]{%
   \href{#1}{{\usebeamercolor[bg]{AAUsimple}#2}}%
 }
 
-\title{The AAU Simple Beamer Theme}
+\title{Korean Word Network}
 
-\subtitle{v.\ 1.3.2}  % could also be a conference name
+\subtitle{v.0.1.0}  % could also be a conference name
 
 \date{\today}
 
 \author{
-  Jesper Kjær Nielsen\\
-  \href{mailto:jkn@es.aau.dk}{{\tt jkn@es.aau.dk}}
+  Kyunghoon Kim\\
+  \href{mailto:kyunghoon@unist.ac.kr}{{\tt kyunghoon@unist.ac.kr}}
 }
 
 % - Give the names in the same order as they appear in the paper.
@@ -46,23 +47,21 @@
 %   affiliation. See the beamer manual for an example
 
 \institute[
-%  {\includegraphics[scale=0.2]{aau_segl}}\\ %insert a company, department or university logo
-  Dept.\ of Electronic Systems\\
-  Aalborg University\\
-  Denmark
+%  {\includegraphics[scale=0.2]{unist}}\\
+  Dept.\ of Mathematical Sciences\\
+  UNIST\\
+  Republic of Korea
 ] % optional - is placed in the bottom of the sidebar on every slide
 {% is placed on the bottom of the title page
-  Department of Electronic Systems\\
-  Aalborg University\\
-  Denmark
+  Department of Mathematical Sciences\\
+  Ulsan National Institute of Science and Technology\\
+  Republic of Korea
   
   %there must be an empty line above this line - otherwise some unwanted space is added between the university and the country (I do not know why;( )
 }
 
-% specify a logo on the titlepage (you can specify additional logos an include them in 
-% institute command below
-\pgfdeclareimage[height=1.5cm]{titlepagelogo}{AAUgraphics/aau_logo_new} % placed on the title page
-%\pgfdeclareimage[height=1.5cm]{titlepagelogo2}{AAUgraphics/aau_logo_new} % placed on the title page
+\pgfdeclareimage[height=1.5cm]{titlepagelogo}{imgs/unist}
+
 \titlegraphic{% is placed on the bottom of the title page
   \pgfuseimage{titlepagelogo}
 %  \hspace{1cm}\pgfuseimage{titlepagelogo2}
@@ -77,7 +76,7 @@
 %%%%%%%%%%%%%%%%
 
 % TOC
-\begin{frame}{Agenda}{}
+\begin{frame}{Contents}{}
 \tableofcontents
 \end{frame}
 %%%%%%%%%%%%%%%%
